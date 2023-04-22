@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "3c3e27d7-04e3-4c75-a31e-d9e9c0238a3a",
+		"name": "MicroService_Crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26867579"
+	},
+	"item": [
+		{
+			"name": "basicEureka",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2222",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2222"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createStudentPro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rollno\" : 1,\r\n    \"name\" : \"Amrit\",\r\n    \"username\" : \"Amrit\",\r\n    \"password\" : \"123\",\r\n    \"addr\" : \"Jammu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/saveStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"saveStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createStudentCon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rollno\" : 2,\r\n    \"name\" : \"Smrit\",\r\n    \"username\" : \"Smrit\",\r\n    \"password\" : \"123\",\r\n    \"addr\" : \"Sammu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7777/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createStudentEureka",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rollno\" : 3,\r\n    \"name\" : \"Bmrit\",\r\n    \"username\" : \"Bmrit\",\r\n    \"password\" : \"123\",\r\n    \"addr\" : \"Bammu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.5:7777/save",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"5"
+					],
+					"port": "7777",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CompleteCreateStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rollno\": 4,\r\n    \"name\": \"Cmrit\",\r\n    \"username\": \"Cmrit\",\r\n    \"password\": \"123\",\r\n    \"addr\": \"Cammu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.5:1111/getcon/save",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"5"
+					],
+					"port": "1111",
+					"path": [
+						"getcon",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CompleteDeleteStudent",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.5:1111/getcon/delete/4",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"5"
+					],
+					"port": "1111",
+					"path": [
+						"getcon",
+						"delete",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CompleteGetAllStudentData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.5:1111/getcon/getStudent",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"5"
+					],
+					"port": "1111",
+					"path": [
+						"getcon",
+						"getStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rollno\": 4,\r\n    \"name\": \"Dmrit\",\r\n    \"username\": \"Dmrit\",\r\n    \"password\": \"123\",\r\n    \"addr\": \"Dammu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.1.5:1111/getcon/update",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"5"
+					],
+					"port": "1111",
+					"path": [
+						"getcon",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
